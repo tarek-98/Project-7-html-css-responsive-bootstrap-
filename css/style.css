@@ -1,0 +1,162 @@
+:root
+{
+    --dark-color:#1f1c45;
+    --r--color:#db341e;
+    --section-color:#757575;
+    --main-transition: 0.3s;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+a
+{
+    text-decoration: none;
+}
+body
+{
+    font-family: "roboto" , sans-serif;
+}
+/*nav*/
+nav
+{
+    background-image: linear-gradient(to right, #1f1c45 67%, #db341e 33%);
+
+}
+nav .nav-item .active
+{
+    background-color: var(--r--color);
+}
+nav .nav-item a
+{
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+nav .nav-item a:hover
+{
+    background-color: var(--r--color);
+}
+/*land*/
+.land
+{
+    background-image: linear-gradient(to right, #1f1c45 67%, #db341e 33%);
+
+}
+.land .text h1
+{
+    font-size: 100px;
+}
+.land .text p,
+.about .text p
+{
+    width: 80%;
+}
+.land .text a,
+.about .text a,
+.services .link a,
+.contact .form a
+{
+    background-color: var(--r--color);
+    color: white;
+    text-transform: uppercase;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+.land .text a:hover,
+.about .text a:hover,
+.services .link a:hover,
+.contact .form a:hover
+{
+    background-color: black;
+}
+.land .image img
+{
+    width: 100%;
+}
+/*about*/
+.about
+{
+    background-color: var(--dark-color);
+}
+.about .pos
+{
+    padding-top: 20%;
+}
+.about .image img
+{
+    width: 100%;
+}
+.about .text h1
+{
+    font-size: 50px;
+}
+/*services*/
+.services
+{
+    background-color: var(--dark-color);
+}
+.services .image
+{
+    background-color: white;
+    border-radius: 10px;
+    transition: var(--main-transition);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+.services .image:hover
+{
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
+.services .image img
+{
+    width: 80%;
+}
+/*contact*/
+.contact
+{
+    background-color: var(--dark-color);
+}
+.contact .form input,
+.contact .form textarea
+{
+    width: 90%;
+}
+.contact .form input:focus,
+.contact .form textarea:focus
+{
+    outline: none;
+}
+.contact .test 
+{
+    background-color: white;
+    position: relative;
+}
+.contact .test p
+{
+    line-height: 2.1rem;
+}
+.contact .test .photo
+{
+    position: absolute;
+    bottom: -22%;
+}
+.contact .test .photo p
+{
+    color: var(--r--color);
+}
