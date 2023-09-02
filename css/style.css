@@ -61,12 +61,19 @@ nav .nav-item a:hover
 {
     background-color: var(--r--color);
     color: white;
-    text-transform: uppercase;
     transition: var(--main-transition);
     -webkit-transition: var(--main-transition);
     -moz-transition: var(--main-transition);
     -ms-transition: var(--main-transition);
     -o-transition: var(--main-transition);
+}
+@media (max-width:320px) {
+  .land .text a
+  {
+    display: block;
+    width: 80%;
+    margin: 5px;
+  }
 }
 .land .text a:hover,
 .about .text a:hover,
